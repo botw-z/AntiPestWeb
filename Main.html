@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1> Q1 </h1>
+    <form action="#" method="get">
+        <label for="select-option">Select an option:</label>
+        <select id="select-option" name="select-option">
+          <option value="option1.1">Option 1</option>
+          <option value="option1.2">Option 2</option>
+          <option value="option1.3">Option 3</option>
+        </select>
+        <input type="submit" value="Submit">
+      </form>
+
+      <script>
+        const form = document.querySelector('form');
+        const select = document.querySelector('#select-option');
+      
+        form.addEventListener('submit', event => {
+          event.preventDefault();
+          const selectedValue = select.options[select.selectedIndex].value;
+          window.location.href = './1/' + selectedValue + '.html'
+        });
+      </script>
+</body>
+</html>
