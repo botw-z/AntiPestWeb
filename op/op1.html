@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AntiPest</title>
+  <link rel = "icon" type ="image/x-icon" href="./Icon.png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<h1> How does it look like? </h1>
+    <form action="#" method="get">
+        <label for="select-option">Select an option:</label>
+        <select id="select-option" name="select-option">
+          <option value="op1.1">Option 1</option>
+          <option value="op1.2">Option 2</option>
+          <option value="op1.3">Option 3</option>
+        </select>
+        <input type="submit" value="Submit">
+
+        <h3> Option 1 </h3>
+        <p>
+          Semi-transparent brownish/white-tinted circular bugs
+        </p>
+        <span>
+          <img src="https://www.gardendesign.com/pictures/images/600x420Exact_68x0/dream-team-s-portland-garden_6/scale-insects-on-branch-shutterstock-com_16484.jpg" alt="Scale bug">
+          <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2K34hSjuOAw0DuRf3NHAMDdfvM-mBizYK2A&s" alt="Scale bug">
+        </span>
+
+        <h3> Option 2 </h3>
+        
+      </form>
+
+      <script>
+        const form = document.querySelector('form');
+        const select = document.querySelector('#select-option');
+      
+        form.addEventListener('submit', event => {
+          event.preventDefault();
+          const selectedValue = select.options[select.selectedIndex].value;
+          window.location.href = selectedValue + '.html'
+        });
+      </script>
+</body>
+</html>

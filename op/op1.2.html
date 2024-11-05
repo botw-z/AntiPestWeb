@@ -5,28 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>AntiPest</title>
   <link rel = "icon" type ="image/x-icon" href="./Icon.png">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<h1> Q2 </h1>
-    <form action="#" method="get">
-        <label for="select-option">Select an option:</label>
-        <select id="select-option" name="select-option">
-          <option value="op1.2.1">Option 1</option>
-          <option value="op1.2.2">Option 2</option>
-          <option value="op1.2.3">Option 3</option>
-        </select>
-        <input type="submit" value="Submit">
-      </form>
-
-      <script>
-        const form = document.querySelector('form');
-        const select = document.querySelector('#select-option');
-      
-        form.addEventListener('submit', event => {
-          event.preventDefault();
-          const selectedValue = select.options[select.selectedIndex].value;
-          window.location.href = selectedValue + '.html'
-        });
-      </script>
+	<h1> Q3 </h1>
 </body>
 </html>
