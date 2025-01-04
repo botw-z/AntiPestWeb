@@ -6,24 +6,29 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .container {
     max-width: 800px;
     width: 100%;
     padding: 32px;
 }
+
 header {
     text-align: center;
     margin-bottom: 48px;
 }
+
 h1 {
     font-size: 2.25rem;
     font-weight: bold;
     color: #4B5563;
     margin-bottom: 8px;
 }
+
 p {
     color: #6B7280;
 }
+
 .drag-area {
     border: 2px dashed #4B5563;
     border-radius: 12px;
@@ -32,52 +37,56 @@ p {
     cursor: pointer;
     margin-bottom: 32px;
 }
+
 .hidden {
     display: none;
 }
+
 .preview-area {
     background-color: white;
     border-radius: 12px;
     padding: 24px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .loading-indicator {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 16px 0;
 }
-.btn {
-    width: 100%;
-    background-color: #6B7280;
-    color: white;
-    padding: 12px;
-    border-radius: 8px;
-    transition: background-color 0.2s;
-}
-.btn:hover {
-    background-color: #4B5563;
-}
+
 .result {
     margin-top: 16px;
 }
+
 .result-title {
     font-weight: bold;
     margin-bottom: 8px;
 }
+
 .result-description {
     color: #6B7280;
 }
+
 .severity {
     display: inline-block;
     padding: 4px 8px;
     border-radius: 9999px;
 }
+
 .treatment-list {
     list-style-type: disc;
     padding-left: 20px;
     margin-top: 16px;
 }
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 #imagePreview {
     display: block;
     margin: 0 auto;
@@ -93,8 +102,9 @@ p {
 #pestInfo {
     text-align: center;
 }
-.logo {
-    height: 240px;
-    width: auto;
-    margin-right: 20px;
+
+#logo {
+    width: 70px;
+    height: auto;
+    margin: 15px;
 }
