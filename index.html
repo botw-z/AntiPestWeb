@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antipest</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" type ="image/x-icon" href="./Icon.png">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Antipest</h1>
+            <p>Upload an image of your plant to identify any pests</p>
+        </header>
+
+        <div>
+            <!-- Upload Area -->
+            <div id="dragArea" class="drag-area">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <p>Drag and drop your image here or</p>
+                    <input type="file" id="fileInput" accept="image/*">
+                </div>
+            </div>
+
+            <!-- Preview Area -->
+            <div id="previewArea" class="hidden">
+                <div>
+                    <img id="imagePreview"/>
+                    <div id="loadingIndicator">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div id="resultArea" class="hidden">
+                        <h2>Analysis Results</h2>
+                        <div id="pestInfo">
+                            <!-- Results will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+                <button onclick="resetUpload()">
+                    Upload Another Image
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="action.js"></script>
+</body>
+</html>
