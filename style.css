@@ -93,3 +93,8 @@ p {
 #pestInfo {
     text-align: center;
 }
+.logo {
+    height: 240px;
+    width: auto;
+    margin-right: 20px;
+}
