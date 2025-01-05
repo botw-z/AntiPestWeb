@@ -1,4 +1,4 @@
-const API_KEY = 'AIzaSyB80eaehLMopcJHF8Zv8rf4hmdf1j9nbLE';
+const API_KEY = '';
         
 const dragArea = document.getElementById('dragArea');
 const fileInput = document.getElementById('fileInput');
